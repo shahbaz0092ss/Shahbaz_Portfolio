@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/index.sass"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -96,22 +99,22 @@
           <p class="center-all sub-heading">I've got chops in all phases of the design process.</p>
         </div>
         <div class="row my-5 ">
-          <div class="col expertise-cols hideme expertiseColOne">
-            <i class="far fa-lightbulb fa-4x"></i>
+          <div class="col expertise-cols hideme animated expertiseColOne">
+            <i class="far fa-lightbulb fa-4x expertise-icons"></i>
             <h3>Ideas</h3>
-            <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's
+            <p class="expertise-p">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's
             where the majority of amazing user experiences start. </p>
           </div>
           <div class="col expertise-cols hideme expertiseColOne">
-            <i class="fab fa-hubspot fa-4x"></i>
+            <i class="fab fa-hubspot fa-4x  expertise-icons"></i>
             <h3>Design</h3>
-            <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist
+            <p class="expertise-p">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist
             who truly believes that less is more. </p>
           </div>
-          <div class="col expertise-cols hideme expertiseColThree">
-            <i class="fas fa-code fa-4x"></i>
+          <div class="col expertise-cols animated hideme  expertiseColThree">
+            <i class="fas fa-code fa-4x  expertise-icons"></i>
             <h3>Code</h3>
-            <p>I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I can work
+            <p class="expertise-p">I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I can work
             with front-end frameworks like Bootstrap too. </p>
           </div>
         </div>
@@ -137,7 +140,7 @@
           <h1 class="center-all">My Work</h1>
         </div>
         <div class="row mt-3">
-          <p class="center-all sub-heading">Want to see more examples? Email me.</p>
+          <p class="center-all sub-heading">Want to see more examples? <a class="mailMe" href="mailto:shahbaz.0092.ss@gmail.com">Email me</a> .</p>
         </div>
         <div class="row mt-5 my-5">
           <div class="col-md-6 expertise-cols">
@@ -150,7 +153,7 @@
               <p class="jobTitle">Junior Web Develoer</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.    </p>
-            <button type="button" class="btn btn-outline-dark">Visit Site <i class="fas fa-chevron-right"></i></button>
+            <button type="button" class="btn btn-outline-dark ">Visit Site <i class="fas fa-chevron-right"></i></button>
                 
             </div>
           </div>
@@ -379,8 +382,10 @@
         if (bottom_of_window > bottom_of_object) {
 
           $('.expertiseColOne').animate({ 'opacity': '1' }, 500);
-          $('.expertiseColTwo').animate({ 'opacity': '1' }, 1000);
-          $('.expertiseColThree').animate({ 'opacity': '1' }, 1500);
+          $('.expertiseColTwo').animate({ 'opacity': '1' }, 5000);
+          $('.expertiseColThree').animate({ 'opacity': '1' }, 500);
+          $(".expertiseColThree").addClass("slideInRight");
+          $(".expertiseColOne").addClass("slideInLeft");
         
         }
 
@@ -389,6 +394,17 @@
     });
 
   });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".projectImages").hover(function () {
+        $(".myProjects").css("background-image", "url('img/project01.jpg')");
+      }, function () {
+        $(".myProjects").css("background-color", "#fff");
+        $(".myProjects").css("background-image", "none");
+        
+      });
+    });
   </script>
 </body>
 
