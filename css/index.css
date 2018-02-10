@@ -2,6 +2,11 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.margin-center{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .navbar{
 	background-color: transparent !important;
 }
@@ -25,7 +30,7 @@
 }
 
 .expertise-cols>*{
-	width: 100%;
+	width: 100% !important;
 	text-align: center;
 	margin-top: 12px;
 }
@@ -100,8 +105,8 @@ background-color: #fff;
 
 .WrittenPart{
 	margin-left: 50%;
-	margin-top: 35%;
-	 margin-right: -50%;
+	margin-top: 30%;
+	margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 .projectImages{
@@ -129,6 +134,30 @@ background-color: #000 !important;
 .footer-buttons{
 margin: 0 auto;
 
+}
+
+.social-icons>button{
+	border: 0px;
+}
+
+.sub-heading{
+	font-size:1.2rem;
+	font-weight: 400;
+}
+.jobTitle{
+	font-weight: 500;
+	color: #948787;
+}
+.sectionPaddingTopBottom{
+	padding-top: 7rem;
+	padding-bottom: 5rem;
+}
+#scrollDown{
+	cursor: pointer;
+}
+.hideme
+{
+	opacity:0;
 }
 /* ------------------------------------------- */
 
@@ -191,3 +220,4 @@ margin: 0 auto;
 }
 }
 
+/* --------------------------- */

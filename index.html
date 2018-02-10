@@ -13,6 +13,7 @@
     crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/index.sass"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
@@ -22,7 +23,7 @@
     <!-- ----------------------------------------------------------------- -->
 
     <div class="sectionTop">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +59,9 @@
           <!--  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
+    </form> 
         </div>
-      </nav>
+      </nav> -->
       <div class="sectionTopImage">
         <!-- <img class="img-fluid d-block w-100" src="img/slider1v1.jpg"> -->
       </div>
@@ -75,10 +76,10 @@
           </h1>
         </div>
         <div class="TopSectionButtons">
-          <button type="button" class="btn btn-outline-dark">YES, I'M AVAILABLE FOR JOB </button>
+          <button type="button" id="job" class="btn btn-outline-dark">YES, I'M AVAILABLE FOR JOB </button>
           <p class="learnMore"> Learn More About What I Do</p>
-          <p>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <p id="scrollDown">
+            <i  class="fa fa-chevron-down" aria-hidden="true"></i>
           </p>
         </div>
       </div>
@@ -86,69 +87,113 @@
 
     <!-- ----------------------------------------------------------------- -->
 
-    <div class="myExpertise pt-5 py-3">
+    <div id="myExpertise" class="myExpertise sectionPaddingTopBottom">
       <div class="container">
         <div class="row ">
-          <h2 class="center-all">My Expertise</h2>
+          <h1 class="center-all">My Expertise</h1>
         </div>
         <div class="row mt-3">
-          <p class="center-all">I've got chops in all phases of the design process.</p>
+          <p class="center-all sub-heading">I've got chops in all phases of the design process.</p>
         </div>
-        <div class="row mt-5 my-5">
-          <div class="col expertise-cols">
-            <i class="fa  fa-grav fa-5x " aria-hidden="true"></i>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. </p>
+        <div class="row my-5 ">
+          <div class="col expertise-cols hideme expertiseColOne">
+            <i class="far fa-lightbulb fa-4x"></i>
+            <h3>Ideas</h3>
+            <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's
+            where the majority of amazing user experiences start. </p>
           </div>
-          <div class="col expertise-cols">
-            <i class="fa  fa-grav fa-5x" aria-hidden="true"></i>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. </p>
+          <div class="col expertise-cols hideme expertiseColOne">
+            <i class="fab fa-hubspot fa-4x"></i>
+            <h3>Design</h3>
+            <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist
+            who truly believes that less is more. </p>
           </div>
-          <div class="col expertise-cols">
-            <i class="fa  fa-grav fa-5x" aria-hidden="true"></i>
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. </p>
+          <div class="col expertise-cols hideme expertiseColThree">
+            <i class="fas fa-code fa-4x"></i>
+            <h3>Code</h3>
+            <p>I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I can work
+            with front-end frameworks like Bootstrap too. </p>
           </div>
         </div>
       </div>
     </div>
+  <!-- ----------------------------------------------------------------- -->
+
+<!-- <div class="content">
+  <div class="wrapper">
+    <div class="box" data-scroll-speed="2">S</div>
+    <div class="box" data-scroll-speed="3">C</div>
+    <div class="box" data-scroll-speed="6">R</div>
+    <div class="box" data-scroll-speed="5">O</div>
+    <div class="box" data-scroll-speed="9">L</div>
+    <div class="box" data-scroll-speed="4">L</div>
+  </div>
+</div> -->
 
     <!-- ----------------------------------------------------------------- -->
-    <div class="myWork pt-5  py-3">
+    <div class="myWork sectionPaddingTopBottom">
       <div class="container">
         <div class="row ">
-          <h2 class="center-all">My Work</h2>
+          <h1 class="center-all">My Work</h1>
         </div>
         <div class="row mt-3">
-          <p class="center-all">I've got chops in all phases of the design process.</p>
+          <p class="center-all sub-heading">Want to see more examples? Email me.</p>
         </div>
         <div class="row mt-5 my-5">
           <div class="col-md-6 expertise-cols">
             <img src="img/project-showcase-wedler.png" class="img-fluid" alt="Image">
           </div>
-          <div class="col-md-6 expertise-cols">
+          <div class="col-md-6">
             <div class="WrittenPart">
-              <i class="fa  fa-grav fa-5x" aria-hidden="true"></i>
-              <h3>Heading</h3>
+              <!-- <i class="fa  fa-grav fa-5x" aria-hidden="true"></i> -->
+              <h3>Amphenol Canada INC.</h3>
+              <p class="jobTitle">Junior Web Develoer</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.    </p>
+            <button type="button" class="btn btn-outline-dark">Visit Site <i class="fas fa-chevron-right"></i></button>
+                
             </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row mt-5 my-5">
+            <div class="expertise-cols w-100">
+              <!-- <i class="fa  fa-grav fa-5x" aria-hidden="true"></i> -->
+              <h3>Amphenol Canada INC.</h3>
+              <p class="jobTitle">Junior Web Develoer</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. </p>
+              
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 my-5">
+          <div class="col-md-6">
+            <div class="WrittenPart">
+              <!-- <i class="fa  fa-grav fa-5x" aria-hidden="true"></i> -->
+              <h3>Amphenol Canada INC.</h3>
+              <p class="jobTitle">Junior Web Develoer</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. </p>
+              <button type="button" class="btn btn-outline-dark">Visit Site
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 expertise-cols">
+            <img src="img/project-showcase-wedler.png" class="img-fluid" alt="Image">
           </div>
         </div>
       </div>
     </div>
     <!-- ----------------------------------------------------------------- -->
-    <div class="myProjects pt-5  py-3">
+    <div class="myProjects sectionPaddingTopBottom">
       <div class="container">
         <div class="row ">
-          <h2 class="center-all">Personal Projects</h2>
+          <h1 class="center-all">Personal Projects</h1>
         </div>
         <div class="row mt-3">
-          <p class="center-all">I've got chops in all phases of the design process.</p>
+          <p class="center-all sub-heading">When I'm not freelancing, I'm working on digital products.</p>
         </div>
         <div class="row mt-5 my-5">
           <div class="col expertise-cols">
@@ -189,13 +234,13 @@
     </div>
     <!-- ----------------------------------------------------------------- -->
     
-    <div class="workTogetherSection pt-5 py-3">
+    <div id="workTogetherSection" class="workTogetherSection sectionPaddingTopBottom">
       <div class="container">
         <div class="row mt-3 ">
-          <h2 class="center-all">Want to work together?</h2>
+          <h1 class="center-all">Want to work together?</h1>
         </div>
         <div class="row mt-3">
-          <p class="center-all">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
+          <p class="center-all sub-heading">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
         </div>
         <div class="row mt-4 my-3">
           <button type="button" class="btn btn-outline-dark btnWorkTogether">YES, I'M AVAILABLE FOR JOB </button>
@@ -205,19 +250,29 @@
 
     <!-- ----------------------------------------------------------------- -->
 
-    <div class="footer pt-5 py-3">
+    <div class="footer sectionPaddingTopBottom">
       <div class="container pt-5 mt-2">
         
         <div class="row mt-3">
-          <p class="center-all">Handmade by me © 2017.</p>
+          <p class="center-all">Made with <i class="far fa-heart"></i> by Shahbaz © 2018.</p>
         </div>
         <div class="row mt-4 my-3">
           <div class="btn-group footer-buttons">
-          <button type="button" class="btn btn-outline-dark"><i class="fab fa-github fa-2x"></i></button>
+         <a  class="social-icons" href="https://www.google.ca/"> 
+         <button type="button" class="btn btn-outline-dark"><i class="fab fa-github fa-2x"></i></button>
+        </a>
+          <a class="social-icons" href="https://www.google.ca/">
           <button type="button" class="btn btn-outline-dark"><i class="fab fa-linkedin fa-2x"></i></button>
+          </a>
+          <a class="social-icons" href="https://www.google.ca/">
           <button type="button" class="btn btn-outline-dark"><i class="fab fa-youtube fa-2x"></i></button>
+          </a>
+          <a class="social-icons" href="https://www.google.ca/">
           <button type="button" class="btn btn-outline-dark"><i class="fab fa-facebook fa-2x"></i></button>
+          </a>
+          <a class="social-icons" href="https://www.google.ca/">
           <button type="button" class="btn btn-outline-dark"><i class="fab fa-snapchat fa-2x"></i></button>
+          </a>
           </div>
         </div>
       </div>
@@ -234,6 +289,8 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    
   <script>
 
     var TxtType = function (el, toRotate, period) {
@@ -294,9 +351,44 @@
     };
   </script>
   <script>
-    $("#btnSave").click(function () {
-      $(".nav-tabs > .active").next("a").trigger("click");
+      $("#job").click(function () {
+        $('html, body').animate({
+          scrollTop: $("#workTogetherSection").offset().top
+        }, 1000);
+      });
+
+       $("#scrollDown").click(function () {
+          $('html, body').animate({
+            scrollTop: $("#myExpertise").offset().top
+          }, 1000);
+        });
+  </script>
+  <script>
+ $(document).ready(function () {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll(function () {
+
+      /* Check the location of each desired element */
+      $('.hideme').each(function (i) {
+
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        /* If the object is completely visible in the window, fade it it */
+        if (bottom_of_window > bottom_of_object) {
+
+          $('.expertiseColOne').animate({ 'opacity': '1' }, 500);
+          $('.expertiseColTwo').animate({ 'opacity': '1' }, 1000);
+          $('.expertiseColThree').animate({ 'opacity': '1' }, 1500);
+        
+        }
+
+      });
+
     });
+
+  });
   </script>
 </body>
 
